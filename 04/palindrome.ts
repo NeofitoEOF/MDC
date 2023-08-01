@@ -1,9 +1,9 @@
+const REGEX_NON_ALPHANUMERIC = /[^a-z0-9]/g;
+
 function isPalindrome(word: string): boolean {
-  const lowerCaseWord = word.toLowerCase();
-
-  const cleanWord = lowerCaseWord.replace(/[^a-z0-9]/g, "");
-
-  return cleanWord === cleanWord.split("").reverse().join("");
+  const cleanWord = word.toLowerCase().replace(REGEX_NON_ALPHANUMERIC, "");
+  const reversedWord = cleanWord.split("").reverse().join("");
+  return cleanWord === reversedWord;
 }
 
 function main(): void {
