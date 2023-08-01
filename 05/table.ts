@@ -1,8 +1,8 @@
 function displayMultiplicationTable(number: number): void {
   console.log(`Multiplication Table for ${number}:`);
-  for (let i = 1; i <= 10; i++) {
-    const result = number * i;
-    console.log(`${number} x ${i} = ${result}`);
+  for (let multiplier = 1; multiplier <= 10; multiplier++) {
+    const result = number * multiplier;
+    console.log(`${number} x ${multiplier} = ${result}`);
   }
 }
 
