@@ -1,0 +1,2 @@
+to run just use tsc to build the ts for js and then node project name.
+remembering that you need to have node installed on the machine
