@@ -1,8 +1,8 @@
-function isPrime(num: number): boolean {
+function isPrimeNumber(num: number): boolean {
   if (num <= 1) return false;
 
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
+  for (let divisor = 2; divisor <= Math.sqrt(num); divisor++) {
+    if (num % divisor === 0) {
       return false;
     }
   }
@@ -14,7 +14,7 @@ function findFirstNPrimes(n: number): number[] {
   let num = 2;
 
   while (primes.length < n) {
-    if (isPrime(num)) {
+    if (isPrimeNumber(num)) {
       primes.push(num);
     }
     num++;
